@@ -1,0 +1,13 @@
+#docker-comporeのバージョン
+version: '3'
+services: 
+  web:
+    build: .
+    command: npm start
+    volumes:
+        - .:/workspace
+        - /workspace/node_modules
+    ports: 
+        - 18000:18000
+# docker build .
+# docker run -p 18000:18000 -it express-sandbox:latest npm start
