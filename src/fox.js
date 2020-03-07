@@ -9,9 +9,7 @@ const fetchFox = async () => {
 
 const handleFox = async channel_id => {
     const data = await fetchFox();
-    const url = data.message;
-    console.log('URLLLLLLL' + url)
-    console.log('CHANNEEEEELLLLLLL' + channel_id)
+    const url = data.image;
     postMessage(channel_id, url);
 };
 
