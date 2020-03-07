@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { postMessage } = require('./utils');
+const postMessage = require('utils');
 
 const fetchFox = async () => {
     const url = 'https://randomfox.ca/floof/';
